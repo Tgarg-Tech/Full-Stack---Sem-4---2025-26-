@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="companies.html">Companies</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <center>
+      <section>
+        <h1>Create your Job Profile</h1>
+        <p>Search & apply to Jobs from india's No. 1 Job site</p>
+      </section>
+      <form action="/register">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="name"
+          placeholder="Enter you Full name"
+          required
+        />
+        <br />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="abc@gmail.com"
+          required
+        />
+        <br />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="password"
+          placeholder="Set Password (atleast 8 characters)"
+          minlength="8"
+          maxlength="16"
+          required
+        />
+        <br />
+        <label for="mobile">Mobile Number</label>
+        <input
+          type="tel"
+          class="mobile"
+          id="mobile"
+          placeholder="Enter your Mobile number"
+          required
+        />
+        <br />
+        <label for="exerience">Do you Have Any Experience ?</label>
+        <select name="experience" id="experience" required>
+          <option value="Experienced">Yes</option>
+          <option value="Not Expirenced">No</option>
+        </select>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+      <br />
+      Already have account?
+      <a href="login.html">Click Here </a>
+      To login
+    </center>
+  </body>
+</html>
