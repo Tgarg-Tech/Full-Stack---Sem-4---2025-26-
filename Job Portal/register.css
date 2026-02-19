@@ -1,0 +1,169 @@
+/* register.css - Register page styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f7fafd;
+  color: #222;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 0.5rem 0;
+}
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4facfe;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: #4facfe;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #00c6fb;
+}
+.register-section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 80, 180, 0.13);
+  width: 400px;
+  margin: 3rem auto 2rem auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+}
+.register-section h1 {
+  color: #4facfe;
+  margin-bottom: 1rem;
+}
+.register-section p {
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.register-form label {
+  text-align: left;
+  color: #333;
+  font-size: 0.98rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+}
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.1rem 0 0.5rem 0;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f7fafd;
+  transition: border 0.2s;
+}
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #4facfe;
+  outline: none;
+  background: #e3f2fd;
+}
+.register-form button {
+  width: 100%;
+  padding: 0.85rem;
+  background: linear-gradient(90deg, #4facfe 0%, #00c6fb 100%);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  box-shadow: 0 2px 8px rgba(0, 80, 180, 0.08);
+  transition:
+    background 0.2s,
+    transform 0.1s;
+}
+.register-form button:hover {
+  background: linear-gradient(90deg, #00c6fb 0%, #4facfe 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+.register-links {
+  margin-top: 1.2rem;
+}
+.register-links a {
+  color: #4facfe;
+  text-decoration: none;
+  font-size: 0.98rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.register-links a:hover {
+  color: #00c6fb;
+  text-decoration: underline;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 2rem 0 1rem 0;
+  border-top: 1px solid #e0e0e0;
+}
+.footer-about,
+.footer-links,
+.footer-contact {
+  min-width: 200px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links a {
+  color: #4facfe;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #00c6fb;
+}
+.footer-bottom {
+  text-align: center;
+  background: #f7fafd;
+  padding: 0.7rem 0;
+  color: #888;
+  font-size: 0.97rem;
+}
+@media (max-width: 600px) {
+  .register-section {
+    width: 95vw;
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}

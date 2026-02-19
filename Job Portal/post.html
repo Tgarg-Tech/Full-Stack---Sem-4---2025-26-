@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add New Job</h1>
+    <form>
+      <label for="JobName">Title</label>
+      <input
+        type="text"
+        id="JobName"
+        class="JobName"
+        placeholder="Enter Job Title"
+        required
+      />
+      <br />
+      <br />
+      <label for="Company">Company</label>
+      <input
+        type="text"
+        id="Company"
+        class="Company"
+        placeholder="Company Name"
+        required
+      />
+      <br />
+      <br />
+      <label for="Location">Location</label>
+      <input
+        type="text"
+        id="Location"
+        class="Location"
+        placeholder="Location of a Job"
+        required
+      />
+      <br />
+      <br />
+      <label for="Description">Description</label>
+      <input
+        type="text"
+        id="Description"
+        class="Description"
+        placeholder="Enter Description of the Job"
+      />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="newJob"></div>
+    <script src="post.js"></script>
+  </body>
+</html>

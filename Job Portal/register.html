@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | FindJob</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-flex">
+        <div class="logo"><a href="index.html">FindJob</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container">
+      <section class="register-section">
+        <h1>Create Your Job Profile</h1>
+        <p>
+          Search & apply to jobs from India's No. 1 job site. Fill in your
+          details to get started!
+        </p>
+        <form
+          class="register-form"
+          action="/register"
+          method="post"
+          autocomplete="on"
+        >
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@gmail.com"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Set Password (at least 8 characters)"
+            minlength="8"
+            maxlength="16"
+            required
+          />
+
+          <label for="mobile">Mobile Number</label>
+          <input
+            type="tel"
+            name="mobile"
+            id="mobile"
+            placeholder="Enter your mobile number"
+            pattern="[0-9]{10}"
+            required
+          />
+
+          <label for="experience">Do you have any experience?</label>
+          <select name="experience" id="experience" required>
+            <option value="">Select</option>
+            <option value="Experienced">Yes</option>
+            <option value="Not Experienced">No</option>
+          </select>
+
+          <button type="submit">Register</button>
+        </form>
+        <div class="register-links">
+          <p>
+            Already have an account?
+            <a href="login.html">Click here to login</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-flex">
+        <div class="footer-about">
+          <h3>FindJob</h3>
+          <p>
+            Your trusted partner in career growth. Connecting talent with
+            opportunity.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="companies.html">Companies</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>Email: support@findjob.com</p>
+          <p>Phone: +91 12345 67890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Find Job For You. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
