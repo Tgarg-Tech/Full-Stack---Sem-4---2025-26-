@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Task Management</title>
+  </head>
+  <body>
+    <h2>Student Task Manager</h2>
+
+    <input id="taskName" type="text" placeholder="Enter task name" />
+    <select id="priority">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+
+    <div style="margin-top: 15px">
+      <button onclick="showTasks('All')">Show All</button>
+      <button onclick="showTasks('Completed')">Completed</button>
+      <button onclick="showTasks('Pending')">Pending</button>
+    </div>
+
+    <h3>Tasks</h3>
+    <div id="taskList"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
